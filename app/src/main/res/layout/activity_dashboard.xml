@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UI.dashboard">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/smoke">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/task"
+                            android:layout_width="0dp"
+                            app:cardElevation="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="15dp"
+                            android:elevation="5dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+
+                                android:background="@drawable/ripple_effect"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/task"
+                                    android:id="@+id/s1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/s1"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:text="New Task"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/schedule"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            app:cardElevation="8dp"
+                            app:cardCornerRadius="15dp"
+                            >
+                            <RelativeLayout
+                                android:background="@drawable/ripple_effect"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/schedule"
+                                    android:id="@+id/s3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/s3"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:text="Daily Schedule"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/chart"
+                            android:layout_width="0dp"
+                            app:cardElevation="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="15dp"
+                            android:elevation="5dp"
+                            >
+                            <RelativeLayout
+                                android:background="@drawable/ripple_effect"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/piechart"
+                                    android:id="@+id/s2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/s2"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/regular"
+
+                                    android:gravity="center"
+                                    android:text="Tasks Chart"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/selectDayTask"
+                            android:layout_width="0dp"
+                            app:cardElevation="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="15dp"
+                            android:elevation="5dp"
+                            >
+                            <RelativeLayout
+                                android:background="@drawable/ripple_effect"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:src="@drawable/day_task"
+                                    android:id="@+id/s4"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/s4"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center"
+                                    android:text="Day Task"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
